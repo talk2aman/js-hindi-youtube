@@ -8,4 +8,6 @@ const newName = new String('amanpreet')
 console.log(newName[0])
 console.log(newName.length);
 console.log(newName.toUpperCase());
+console.log(newName.at(4));
+
 
