@@ -1,0 +1,13 @@
+<div id="parent">
+    <button id="child">click me</button>
+</div>
+
+<script>
+    document.getElementById("parent").addEventListener("click", () =>{
+        console.log("parent clicked")
+    })
+
+    document.getElementById("child").addEventListener("click", () =>{
+        console.log("child clicked")
+    })
+</script>
