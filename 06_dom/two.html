@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        const div = document.createElement('div')
+        div.className = "main"
+        div.id = "first"
+        div.setAttribute("title", "generated title")
+        div.style.color = "white"
+        div.style.padding = "20px 15px"
+        const textDiv = document.createTextNode("Chai aur code")
+        div.appendChild(textDiv)
+        console.log(div);
+        document.body.appendChild(div)
+        document.body.style.backgroundColor = "#212121"
+    </script>
+</body>
+</html>
