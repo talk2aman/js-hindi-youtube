@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul class="languages">
+        <li>Javascript</li>
+    </ul>
+
+    <script>
+        function addLanguage(lang){
+            const newLi = document.createElement('li')
+            newLi.innerHTML = `${lang}`
+            document.querySelector('.languages').appendChild(newLi)
+        }
+        addLanguage('python and c++')
+
+        // optimized code
+        function newLanguage(newLang){
+            const addNew = document.createElement('li')
+            addNew.appendChild(document.createTextNode(newLang))
+            document.querySelector('.languages').appendChild(addNew)
+        }
+        addLanguage('Snow')
+        addLanguage('leapord')
+
+
+        // edit
+        const secondLi = document.querySelector('li:nth-child(2)')
+        //secondLi.innerHTML = "mojo"
+        const newLi = document.createElement('li')
+        newLi.textContent = "mojo"
+        secondLi.replaceWith(newLi)
+
+        // edit
+        const firstLi = document.querySelector('li:first-child')
+        firstLi.outerHTML = '<li>hello</li>'
+
+        // remove
+        const lastLi = document.querySelector('li:last-child')
+        lastLi.remove()
+
+    </script>
+</body>
+</html>
